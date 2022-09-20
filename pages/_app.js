@@ -1,6 +1,6 @@
 import "../styles/app.scss";
 import Layout from "../components/layout";
-import { UserContext } from "../contexts/user";
+import { UserContext } from "../contexts/User";
 import { useState } from "react";
 
 function MyApp({ Component, pageProps }) {

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useContext } from "react";
-import { UserContext } from "../contexts/user";
+import { UserContext } from "../contexts/User";
 
 import Styles from "./../styles/pages/home.module.scss";
 
