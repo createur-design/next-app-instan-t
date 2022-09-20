@@ -10,8 +10,10 @@ export default function User() {
 
   let isAuth = false;
 
-  if (Number(id) === user.id) {
-    isAuth = true;
+  if (user) {
+    if (Number(id) === user.id) {
+      isAuth = true;
+    }
   }
 
   return (
