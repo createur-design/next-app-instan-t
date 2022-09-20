@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useRouter } from "next/router";
-import { UserContext } from "../../contexts/user";
+import { UserContext } from "../../contexts/User";
 
 export default function User() {
   const router = useRouter();
