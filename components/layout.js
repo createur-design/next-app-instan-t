@@ -1,8 +1,8 @@
 import Footer from "./footer";
-import Router from "next/router";
+import { useRouter } from "next/router";
 
 export default function Layout({ children }) {
-  const path = Router.pathname;
+  const path = useRouter().pathname;
   console.log(path);
   return (
     <>

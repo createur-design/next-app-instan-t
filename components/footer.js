@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function footer() {
   const year = new Date().getFullYear();
   return (
