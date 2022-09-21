@@ -15,7 +15,6 @@ body {
   height: 100%;
   font-family: $typoValera;
 }
-
 /* Avoid Chrome to see Safari hack */
 @supports (-webkit-touch-callout: none) {
   body {
@@ -34,12 +33,9 @@ main {
   flex: 1;
   overflow-y: scroll;
 }
-/* -- only Home -- */
-.bgHome {
-  background-image: url("/assets/images/confetti-cannon-party.jpeg");
-  background-size: cover;
-  color: white;
-}
 .textColorBluePetrol {
   color: $bluePetrol;
+}
+.fontKaushan {
+  font-family: $typoKaushan;
 }

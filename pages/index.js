@@ -18,30 +18,32 @@ export default function Home() {
         <title>Welcome to Instan'T</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className={`grid-container fluid ${Styles.textIntro}`}>
-        <div className="grid-x">
-          <div className="cell">
-            <div className={Styles.paddingBottom}>
-              <div className={Styles.titleHome}>
-                <p>
-                  welcome <br></br>
-                  <span>to</span>
-                </p>
-                <h1>Instan'T</h1>
+      <main>
+        <div className={`grid-container fluid ${Styles.blocIntro}`}>
+          <div className="grid-x grid-padding-x">
+            <div className="cell">
+              <div className={Styles.paddingBottom}>
+                <div className={Styles.titleHome}>
+                  <p>
+                    welcome <br></br>
+                    <span>to</span>
+                  </p>
+                  <h1>Instan'T</h1>
+                </div>
+                <div className={Styles.citation}>
+                  <p>
+                    Have a Great<br></br>
+                    {currentDay}
+                  </p>
+                </div>
+                <Link href={user ? "/events" : "/auth/login"}>
+                  <a className="btn">{user ? "Let's play" : "Sign in"}</a>
+                </Link>
               </div>
-              <div className={Styles.citation}>
-                <p>
-                  Have a Great<br></br>
-                  {currentDay}
-                </p>
-              </div>
-              <Link href={user ? "/events" : "/auth/login"}>
-                <a className="btn">{user ? "Let's play" : "Sign in"}</a>
-              </Link>
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 }

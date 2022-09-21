@@ -1,8 +1,11 @@
 @import "./../vars";
-.textIntro {
+.blocIntro {
   display: flex;
   align-items: flex-end;
   height: 100%;
+  background-image: url("/assets/images/confetti-cannon-party.jpeg");
+  background-size: cover;
+  color: white;
 }
 .paddingBottom {
   padding-bottom: 3rem;
@@ -31,7 +34,7 @@
 }
 .citation {
   p {
-    margin: 10px 0;
+    margin: 0 0 15px 0;
     font-style: italic;
   }
 }

@@ -3,7 +3,7 @@ export default function footer() {
   return (
     <footer>
       <div className="container">
-        <div className="grid-x grid-margin-x">
+        <div className="grid-x grid-padding-x">
           <div className="cell text-center">
             &copy; {year}{" "}
             <small className="textColorBluePetrol">version : 0.0.0</small>

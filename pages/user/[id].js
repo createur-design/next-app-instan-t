@@ -18,9 +18,15 @@ export default function User() {
 
   return (
     <div>
-      {isAuth
-        ? `Il y a un user avec l'id : ${user.id} et il s'appelle ${user.name}`
-        : "Vous n'êtes pas authorisé à consulter ce profil !"}
+      {isAuth ? (
+        <>
+          <p>
+            Il y a un user avec l'id : {user.id} et il s'appelle {user.name}
+          </p>
+        </>
+      ) : (
+        "Vous n'êtes pas authorisé à consulter ce profil !"
+      )}
     </div>
   );
 }

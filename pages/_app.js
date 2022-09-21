@@ -1,15 +1,12 @@
 import "../styles/app.scss";
-import Layout from "../components/layout";
 import { UserContext } from "../contexts/User";
 import { useState } from "react";
 
 function MyApp({ Component, pageProps }) {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({ id: 1, name: "Christophe" });
   return (
     <UserContext.Provider value={{ user, setUser }}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <Component {...pageProps} />
     </UserContext.Provider>
   );
 }
