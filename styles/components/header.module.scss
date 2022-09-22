@@ -1,14 +1,18 @@
 @import "../vars";
 .header {
-  background-color: $bluePetrol;
-  color: white;
-  padding: 15px 0;
+  // color: white;
+  padding: 10px 0;
   h1 {
     font-size: 2.2rem;
   }
   p.titlePage {
     margin: 0;
     line-height: normal;
+    display: inline-block;
+    // background-color: $bluePetrol;
+    // padding: 10px 20px;
+    // border-radius: 25px;
+    font-weight: bold;
     &::first-letter {
       text-transform: uppercase;
     }

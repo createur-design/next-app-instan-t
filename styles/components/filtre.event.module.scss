@@ -1,0 +1,47 @@
+@import "../vars";
+.boxEvents {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .boxSwiper {
+    flex: 1;
+    display: flex;
+    padding: 25px 0;
+  }
+}
+.filtreEvent {
+  button {
+    background-color: $blueMonochrome;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 25px;
+    display: inline-block;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+    &.active {
+      background-color: $bluePetrol;
+    }
+    &:first-child {
+      margin: 0 5px 0 0;
+    }
+  }
+}
+.swiperEvents {
+  padding-left: 0.625rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100%;
+  .swiperSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 25px;
+    overflow: hidden;
+    .img {
+      object-fit: cover;
+    }
+  }
+}
